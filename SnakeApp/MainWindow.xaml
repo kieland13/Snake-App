@@ -1,0 +1,14 @@
+﻿<Window x:Class="SnakeApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SnakeApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="640.4">
+    <Canvas Background="Transparent" Name="drawCanvas" HorizontalAlignment="Left" Height="424" VerticalAlignment="Top" Width="630" MouseEnter="Canvas_MouseEnter" MouseMove="Canvas_MouseMove" MouseDown="Canvas_MouseDown" Margin="0,0,0,-5">
+        <Polyline  Name="snakeLine" Stroke="Red" Visibility="Hidden" StrokeThickness="10"/>
+        <Ellipse Name="snakeHead" Fill="Red" Visibility="Hidden" Height="25" Width="25"/>
+    </Canvas>
+
+</Window>
